@@ -1,0 +1,173 @@
+@media screen and (min-width: 1000px) {
+
+    header h1 {
+        margin-right: 480px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+
+    #main-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hero {
+        grid-column: 1 / 4;
+    }
+
+    #hero-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: rgba(255, 165, 0, 0.7);
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 80%;
+        font-size: 1.25em;
+    }
+
+    #callToAction {
+        padding: 0.5rem;
+    }
+
+    #informationCard {
+        grid-column: 1;
+        font-size: large;
+    }
+
+    #carlsbadCard {
+        grid-column: 2 / 4;
+        text-align: center;
+        font-size: large;
+    }
+
+    #carlsbadCard img {
+        width: auto;
+    }
+
+    #malibuCard {
+        grid-column: 1 / 2;
+        grid-row: 3;
+        text-align: center;
+    }
+
+    #santaBarbaraCard {
+        grid-column: 2 / 3;
+        grid-row: 3;
+        text-align: center;
+    }
+    
+    #sanDiegoCard {
+        grid-column: 3 / 4;
+        text-align: center;
+    }
+
+    #weatherCard {
+        grid-column: 1 / 2;
+        margin: 1rem;
+    }
+
+    #forecastCard {
+        grid-column: 2 / 4;
+        margin: 1rem;
+        position: relative;
+    }
+
+    #forecastCard h2 {
+        text-align: center;
+        position: absolute;
+        top: 3px;
+        left: 300px;
+        margin: 1rem;
+    }
+
+    #forecastCard {
+        display: flex;
+        flex-wrap: nowrap; 
+        justify-content: space-between; 
+        align-items: center; 
+        text-align: center;
+    }
+    #forecastCard section {
+        text-align: center;
+        flex: 1;
+        max-width: 30%;
+        margin-top: 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    ul.social-links {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    ul.social-links li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    ul.social-links img {
+        width: 20px;
+        height: 20px;
+    }
+    ul.social-links a {
+        display: block;
+    }
+
+    /*Hamburger Menu */
+        .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+    }
+
+    /* Order Confirmation */
+
+    #main-orderconfirmation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #detailsCard {
+        grid-column: 1 / 3;
+    }
+
+    #orderCard {
+        grid-column: 1 / 2;
+    }
+
+    #healthCard {
+        grid-column: 2 / 3;
+    }
+
+    #reviewCard {
+        grid-column: 1 / 3;
+    }
+
+    #reviewCard ol li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        padding: 0.25rem;
+    }
+
+    #reviewCard ol li a {
+        margin-left: 10px;
+    }
+
+    #reviewCard p {
+        text-align: center;
+    }
+}

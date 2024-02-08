@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page for Bountiful Foods fruit stand and smoothies">
+    <meta name="author" content="Bryce Woodland">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="WDD230 - Final Project - Bountiful Foods - Home Page">
+    <meta property="og:image" content="">
+    <link rel="icon" href="images/favicon-bountiful.ico">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <title>Bountiful Foods</title>
+    <script defer src="scripts/footer.js"></script>
+    <script defer src="scripts/hamburger-menu.js"></script>
+    <script defer src="scripts/totalDrinks.js"></script>
+    <script defer src="scripts/weather.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo-transparent-png.webp" alt="Bountiful Foods Logo">
+        <h1>Bountiful Foods</h1>
+    </header>
+    <nav>
+        <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="orderdrink.html">Order Drink</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main id="main-home">
+        <section id="hero">
+            <picture>
+                <img src="images/fruitstand.webp" alt="Hero Image">
+            </picture>'
+            <div id="hero-overlay">
+                <h2>Fruits & Smoothies</h2>
+                <p>Bountiful Foods: Where Coastal Living Meets Organic Flavor!</p>
+                <a id="callToAction" href="orderdrink.html">Order Drink</a>
+            </div>
+        </section>
+        <section id="informationCard">
+            <h2>Information</h2>
+            <p>Total Number of Drinks Ordered: <span id="totalDrinks">0</span></p>
+            <img src="images/drinkIcon.webp" alt="drinkIcon">
+        </section>
+        <section id="carlsbadCard">
+            <h2>Carlsbad</h2>
+            <img src="images/fruitBag.webp" alt="Carlsbad">
+            <p>Carlsbad is situated along the Pacific Ocean coastline, providing residents and visitors with scenic views and access to beaches.
+            It is part of the larger San Diego metropolitan area and is known for its pleasant climate.</p>
+        </section>
+        <section id="sanDiegoCard">
+            <h2>San Diego</h2>
+            <img src="images/volkswagen.webp" alt="San Diego">
+            <p>San Diego is a vibrant coastal city located in the southwestern corner of the United States, in the state of California. Known for 
+            its idyllic climate, diverse culture, and picturesque landscapes, San Diego offers a unique blend of urban sophistication and 
+            laid-back beach lifestyle.</p>
+        </section>
+        <section id="malibuCard">
+            <h2>Malibu</h2>
+            <img src="images/surf.webp" alt="Malibu">
+            <p>Malibu is a picturesque coastal city located in Los Angeles County, Southern California. Malibu is situated along the Pacific 
+            Ocean coastline, known for its stunning beaches and rugged coastal landscapes. It is approximately 30 miles west of downtown 
+            Los Angeles.</p>
+        </section>
+        <section id="santaBarbaraCard">
+            <h2>Santa Barbara</h2>
+            <img src="images/southernCalif.webp" alt="Santa Barbara">
+            <p>Santa Barbara is a charming coastal city located on the central coast of California. Nestled between the Santa Ynez Mountains and 
+            the Pacific Ocean, Santa Barbara boasts a picturesque setting. It is situated about 90 miles northwest of Los Angeles.</p>
+            </section>
+        <section id="weatherCard">
+            <h2>Carlsbad Weather</h2>
+            <img id="weather-icon" src="#" alt="weatherIcon">
+            <p id="weather-temp">Temperature: <span>69&deg; F</span></p>
+            <p id="weather-desc">Description:</p>
+            <p id="weather-humid">Humidity:</p>
+        </section>
+        <section id="forecastCard">
+            <h2>Carlsbad Forecast</h2>
+        </section>
+    </main>
+    <footer>
+        <div id="top-container">
+            <img src="images/logo-transparent-png.webp" alt="Bountiful Foods Logo">
+            <p>456 Main Street <br> Carlsbad, California <br> 92008</p>
+            <div id="contact-info">
+                <p>Contact us:</p>
+                <ul class="contact-info">
+                    <li>Email: info@bountifulfoods.com</li>
+                    <li>Phone: (123) 456-7890</li>
+                </ul>
+        </div>
+        </div>
+        <hr>
+        <div id="bottom-container">
+            <p id="resource">Resources/Attribution:</p>
+            <ul>
+                <li>Fruit data provided by <a href="https://www.fruityvice.com" target="_blank">Fruityvice</a></li>
+                <li>Weather data provided by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebookIcon.png" alt="Facebook"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="images/twitterIcon.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagramIcon.png" alt="Instagram"></a></li>
+            </ul>
+            <p>Bryce Woodland || Last Modified: <span id='lastmodified'></span> || Copyright &copy;<span id='currentyear'></span></p>
+        </div>
+    </footer>
+</body>
+</html>

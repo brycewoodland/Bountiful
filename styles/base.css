@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@700&display=swap');
+
+:root {
+    --background-color: #FFFEEB;
+    --header-color: #FFA500;
+    --header-text-color: #4285F4;
+    --hover-color: #333333;
+    --text-color: #5D4037;
+}
+
+/* Home Page */
+header {
+    display: flex;
+    font-family: "Signika";
+    padding: 1rem 2rem;
+    background-color: var(--header-color);
+    color: var(--background-color);
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+nav ul li {
+    flex: 1;
+    background-color: var(--header-color);
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    padding: 1rem;
+    color: var(--background-color);
+    border-top: 1px solid #333333;
+}
+nav ul li a:hover {
+    color: var(--hover-color);
+    background-color: #FFC940;
+}
+.active {
+    color: var(--hover-color);
+    background-color: #FFC940;
+}
+/* Hamburger Menu */
+.menu-hide, .menu-show {
+    display: none;
+}
+
+.menu-hide.showing, .menu-show.showing {
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+    position: relative;
+}
+#nav-menu.showing {
+    display: flex;
+}
+nav button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+}
+body {
+    margin: 0 auto;
+    font-family: "Open Sans";
+    max-width: 1280px;
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+#main-home h1, h2 {
+    font-family: "Signika";
+    text-align: center;
+    color: var(--header-text-color);
+}
+#main-home img {
+    justify-content: center;
+    align-items: center;
+}
+#hero {
+    position: relative;
+}
+#hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 165, 0, 0.7);
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+#hero-overlay h2 {
+    color: #FFF; 
+    margin: 0; 
+    font-size: 1.2em;
+}
+#hero-overlay p {
+    color: var(--background-color);
+    font-size: 0.8em;
+}
+#callToAction {
+    background-color: var(--header-text-color);
+    color: var(--background-color);
+    font-size: 1em;
+    padding: 0.25rem;
+    text-decoration: none;
+    border: 2px solid #333333;
+}
+#callToAction:hover{
+    color: var(--hover-color);
+    background-color: lightblue;
+}
+#main-home h1 {
+    color: var(--header-text-color);
+}
+#main-home p {
+    color: var(--text-color);
+}
+#main-home img {
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+}
+#informationCard {
+    text-align: center;
+}
+#carlsbadCard img {
+    width: 100%;
+}
+#informationCard, #sanDiegoCard, #carlsbadCard, #malibuCard, #santaBarbaraCard {
+    background-color: #FEECB3;
+    border: 3px solid #C68E41;
+    box-shadow: 2px 2px 2px #C68E41;
+    padding: 1rem;
+    margin: 2rem;
+}
+#sanDiegoCard img, #malibuCard img, #santaBarbaraCard img {
+    width: 80%;
+}
+#weatherCard, #forecastCard {
+    background-color: #FEECB3;
+    border: 3px solid #C68E41;
+    box-shadow: 2px 2px 2px #C68E41;
+    margin: 1rem;
+}
+#weatherCard p, #forecastCard p {
+    text-align: center;
+}
+#weather-icon {
+    background-color: lightgray;
+}
+#forecastCard img {
+    background-color: lightgray;
+}
+footer {
+    margin: 0 auto;
+    background-color: var(--header-color);
+    color: white;
+    padding: 1rem;
+    font-size: medium;
+    text-align: center;
+    position: relative;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+#top-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center;
+    font-size: large;
+}
+#top-container img {
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+#contact-info {
+    text-align: center;
+}
+#contact-info h3 {
+    margin: 0;
+}
+ul.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.contact-info li {
+    text-align: center;
+}
+ul li a:hover {
+    color: var(--background-color);
+}
+ul.social-links {
+    margin-bottom: 10px;
+}
+ul.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+ul.social-links img {
+    width: 20px;
+    height: 20px;
+}
+ul.social-links a {
+    display: block;
+}
+
+/* Order Drink Page */
+#main-orderdrink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label.myinput {
+    display: block;
+    padding-top: 1rem;
+}
+label.myinput input, label.myinput textarea {
+    display: block;
+    font-size: 1.1rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+    border: 2px solid #333333;
+}
+input:invalid {
+    box-shadow: 2px 2px 2px #E74C3C;
+}
+label.myinput select {
+    display: block;
+    font-size: 1.1rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+    border: 2px solid #333333;
+    background-color: #FFF; 
+    background-position: right 10px center;
+    cursor: pointer;
+}
+label.myinput select:invalid {
+    box-shadow: 2px 2px 2px #E74C3C;
+}
+.mysubmit {
+    background: var(--header-text-color);
+    color: var(--background-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1em;
+    border: 2px solid #333333;
+}
+.mysubmit:hover {
+    background-color: lightblue;
+    color: var(--hover-color);
+}
+
+/* About Us Page */
+#main-aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+#main-aboutus h1 {
+    text-align: center;
+}
+#main-aboutus section img {
+    display: block;
+    margin: 0 auto;
+}
+#main-aboutus section p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--text-color);
+}
+#google-map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5px;
+}
+
+/* Order Confirmation Page */ 
+#detailsCard, #orderCard, #healthCard {
+    text-align: center;
+    padding: 1rem;
+}
+#orderCard, #healthCard {
+    background-color: #FEECB3;
+    border: 1px solid var(--header-color);
+    box-shadow: 2px 2px 2px #C68E41;
+    margin: 20px;
+}
+#orderCard h2, #healthCard h2 {
+    text-decoration: underline;
+}
+#orderCard p, #healthCard p {
+    color: var(--text-color);
+    font-size: large;
+}
+#reviewCard {
+    text-align: left;
+    padding: 2rem;
+    background-color: #FEECB3;
+    color: var(--text-color);
+    border: 1px solid var(--header-color);
+    box-shadow: 2px 2px 2px #C68E41;
+    margin: 20px;
+}
+#reviewCard h2 {
+    color: var(--header-text-color);
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+#reviewCard a {
+    display: inline-block;
+    background-color: var(--header-text-color);
+    color: var(--background-color);
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+#reviewCard img {
+    width: 20px;
+    margin-right: 5px;
+}
+#reviewCard a:hover {
+    background-color: lightblue;
+    color: var(--hover-color);
+}
